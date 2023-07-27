@@ -37,15 +37,27 @@ html,
 
 
 .title {
-    margin-top: 100px;
-    color: #000;
+    padding: 25px 25px 0 0;
+    position: relative;
     font-family: Montserrat;
-    font-size: 80px;
     font-style: normal;
     font-weight: 600;
-    line-height: 94px;
-    text-transform: uppercase;
-    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    color: #000;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        display: block;
+        background-image: url('../images/decor/star.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        right: 0;
+    }
 }
 
 .mainBtn {

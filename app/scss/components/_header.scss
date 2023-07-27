@@ -124,13 +124,11 @@
 .header::before {
     content: '';
     position: absolute;
-    width: 2279.854px;
-    height: 1655.091px;
+    width: 100%;
+    height: 2000px;
     background-image: url('../../images/header/header__bg.jpg');
-    top: -450px;
-    left: 0;
-    right: 0;
     background-repeat: no-repeat;
     background-size: cover ;
+    top: -450px;
     z-index: -1;
 }

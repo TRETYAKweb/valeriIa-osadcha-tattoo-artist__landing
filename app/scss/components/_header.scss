@@ -1,0 +1,136 @@
+.header {
+    position: relative;
+    padding: 100px 0;    
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__text {
+        width: 232px;
+        position: absolute;
+        left: 60%;
+        top: 57%;
+
+    }
+
+    &__btn a {
+        color: inherit;
+    }
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        position: relative;
+        margin-top: 0;
+        padding: 70px 0;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 94px; 
+        text-transform: uppercase;
+    }
+
+    &__title::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 421px;
+        height: 421px;
+        background-image: url('../../images/header/header__decor.svg');
+        background-repeat: no-repeat;
+        top: 0;
+        left: 160px;
+    }
+   
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    &__list {
+        display: flex;
+
+    }
+
+    &__list-item {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    &__list-link{
+        transition: color 0.3s ease-in-out;
+        
+    }
+
+    &__list-link:hover{
+        color: #FF39BC;
+    }
+    
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        cursor: pointer;
+        color: white;
+        background-color: #FF39BC;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+        transition: all 0.3 ease-in-out;
+    }
+
+    &__btn:hover {
+        filter: drop-shadow(-2px 4px 10px rgba(255, 57, 188, 0.25)) drop-shadow(0px -2px 8px rgba(255, 57, 188, 0.25));
+    }
+
+    &__social {
+        display: flex;
+
+    }
+
+    &__social-item {
+        padding-right: 10px;
+        padding-left: 10px;
+        fill: #000;
+        transition: fill 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    
+    &__social-item:hover {
+        fill: #FF39BC;
+    }
+
+    &__list-link {
+        color: black;
+    }
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    width: 2279.854px;
+    height: 1655.091px;
+    background-image: url('../../images/header/header__bg.jpg');
+    top: -450px;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    z-index: -1;
+}

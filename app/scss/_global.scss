@@ -1,0 +1,66 @@
+html,
+.body {
+	font-family: 'Mulish', sans-serif;
+	height: 100%;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+    fill: #000000;
+    transition: fill 0.3s ease-in-out;
+    &:hover {
+        fill: #FF39BC;
+    }
+}
+
+
+.title {
+    margin-top: 100px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.mainBtn {
+    cursor: pointer;
+    color: white;
+    background-color: #FF39BC;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: transparent;
+        border: 2px solid #FF39BC;
+        color: #000;
+    }
+}
+

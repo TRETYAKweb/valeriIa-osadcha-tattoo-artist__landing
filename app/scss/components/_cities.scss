@@ -1,9 +1,13 @@
 .cities {
-  padding-top: 100px;
+  padding: 100px 0;
   position: relative;
   &__wrapper {
     display: flex;
     justify-content: space-around;
+  }
+
+  &__title {
+    margin-bottom: 70px;
   }
 
   &__subtitle {
@@ -22,9 +26,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #b91f1f;
+    background-color: #fff;
     border-radius: 50%;
-    width: 315px;
+    max-width: 315px;
+    width: 100%;
     height: 315px;
   }
 
@@ -41,17 +46,5 @@
   &__text {
     display: block;
     padding: 3px;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 835px;
-    height: 1096px;
-    background-image: url("../../images/cities/gradient.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 50px;
-
-    z-index: -1;
   }
 }

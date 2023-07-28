@@ -1,69 +1,67 @@
 .about {
+  position: relative;
+  margin-bottom: 200px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right {
+    max-width: 532px;
+    width: 100%;
+  }
+
+  &__left {
     position: relative;
-    margin-bottom: 200px;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    padding: 66px 55px 0 0;
+  }
 
-    &__right {
-        max-width: 532px;
-        width: 100%;
-    }
+  &__img {
+    border-radius: 10px 202.5px 10px 10px;
+  }
 
-    &__left {
-        position: relative;
-        padding: 66px 55px 0 0;
-    }
-    
-    &__img {
-        border-radius: 10px 202.5px 10px 10px;
-    }
+  &__left::before {
+    content: "";
+    position: absolute;
+    width: 245px;
+    height: 245px;
+    background-image: url("../../images/about-me/about-me__decor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    animation: rotate 10s linear 0s infinite;
+  }
 
-    &__left::before {
-        content: '';
-        position: absolute;
-        width: 245px;
-        height: 245px;
-        background-image: url('../../images/about-me/about-me__decor.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        animation: rotate 10s linear 0s infinite;
-    }
+  &__title {
+    margin-bottom: 60px;
+  }
 
-    &__title {
-        margin-bottom: 60px;
-    }
+  &__text:not(:last-child) {
+    margin-bottom: 40px;
+  }
 
-    &__text:not(:last-child) {
-        margin-bottom: 40px;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 835px;
-        height: 1096px;
-        background-image: url("../../images/about-me/about-me__bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-    	right: 0;
-        z-index: -1;
-    }
-
+  &::before {
+    content: "";
+    position: absolute;
+    width: 835px;
+    height: 1500px;
+    background-image: url("../../images/about-me/about-me__bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 @keyframes rotate {
   from {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-

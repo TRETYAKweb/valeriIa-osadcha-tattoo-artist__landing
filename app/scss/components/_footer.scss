@@ -1,21 +1,20 @@
 .footer {
-    margin-top: 100px;
-    padding: 26px 0;
-    background-color: #2B2B2B;
+  padding: 26px 0;
+  background-color: #2b2b2b;
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        color: #FFF;
-    }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+  }
 
-    &__logo {
-        color: #FFF;
-    }
+  &__logo {
+    color: #fff;
+  }
 
-    &__copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

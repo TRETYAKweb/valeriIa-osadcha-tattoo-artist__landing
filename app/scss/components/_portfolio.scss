@@ -12,6 +12,11 @@
 
   &__grid--item {
     text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__grid--item:hover {
+    transform: scale(1.05);
   }
 
   &__grid--item:nth-child(1) {
@@ -65,52 +70,4 @@
     grid-column: 3;
     grid-row: 2;
   }
-
-  // &__item--decor{
-  //     position: relative;
-  //     padding: 66px 55px 0 0;
-  // }
-  // &__item--decor::before{
-  //     content: '';
-  //     position: absolute;
-  //     width: 205px;
-  //     height: 205px;
-  //     background-image: url('../../images/portfolio/decor.png');
-  //     background-repeat: no-repeat;
-  //     background-size: cover;
-  //     top: 0;
-  //     right: 0;
-  //     z-index: -1;
-  //     animation: rotate 10s linear 0s infinite;
-
-  // }
-
-  // &__btn {
-  //     // cursor: pointer;
-  //     // color: white;
-  //     // background-color: #FF39BC;
-  //     // width: 200px;
-  //     // height: 200px;
-  //     // flex-shrink: 0;
-  //     // border: none;
-  //     // border-radius: 50%;
-
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     font-size: 12px;
-  //     cursor: pointer;
-  //     color: white;
-  //     background-color: #FF39BC;
-  //     width: 200px;
-  //     height: 200px;
-  //     flex-shrink: 0;
-  //     border: none;
-  //     border-radius: 50%;
-  //     text-align: center;
-  //     transition: all 0.3 ease-in-out;
-  // }
-  // &__btn:hover {
-  //     filter: drop-shadow(-2px 4px 10px rgba(255, 57, 188, 0.25)) drop-shadow(0px -2px 8px rgba(255, 57, 188, 0.25));
-  // }
 }

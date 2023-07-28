@@ -1,97 +1,89 @@
 .faq-container {
-    max-width: 1130px;
-    margin: 0 auto;
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
 .faq {
-    background-color: transparent;
-   
-    border-radius: 10px;
-    margin: 20px 0;
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3 ease;
+  background-color: transparent;
+
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3 ease;
 }
 
 .faq.active {
-    background-color: #FF39BC;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ff39bc;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .faq-title {
-    margin: 0 35px 0 0;
-
+  margin: 0 35px 0 0;
 }
 
 .faq.active .faq-title {
-    color: #FFF;
+  color: #fff;
 }
 
 .faq-text {
-    display: none;
-    margin: 30px 0 0;
+  display: none;
+  margin: 30px 0 0;
 }
 
 .faq.active .faq-text {
-    display: block;
-    color: #fff;
+  display: block;
+  color: #fff;
 }
 
 .faq-toggle {
-    background-color: transparent;
-    border: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    padding: 0;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    height: 30px;
-    width: 30px;
-
-
-
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
 }
 
-
 .faq-toggle:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .faq-toggle .fa-times {
-    display: none;
-
+  display: none;
 }
 
-
 .faq.active .faq-toggle .fa-times {
-    color: #fff;
-    display: block;
+  color: #fff;
+  display: block;
 }
 
 .faq.active .faq-toggle .fa-chevron-down {
-    display: none;
-
+  display: none;
 }
 
-.faq.active .faq-toggle {}
+.faq.active .faq-toggle {
+}
 
 .minus-icon {
-    display: none;
-  }
-  
-  /* Показываем иконку минуса при активности .faq.active */
-  .faq.active .minus-icon {
-    display: inline;
-  }
-  
-  /* Скрываем иконку плюса при активности .faq.active */
-  .faq.active .plus-icon {
-    display: none;
-  }
+  display: none;
+}
+
+/* Показываем иконку минуса при активности .faq.active */
+.faq.active .minus-icon {
+  display: inline;
+}
+
+/* Скрываем иконку плюса при активности .faq.active */
+.faq.active .plus-icon {
+  display: none;
+}

@@ -1,127 +1,73 @@
 .portfolio {
-    padding-top: 100px;
+  padding-top: 100px;
+  position: relative;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 35px;
+    margin-top: 60px;
+  }
+
+  &__grid--item {
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__grid--item:hover {
+    transform: scale(1.05);
+  }
+
+  &__grid--item:nth-child(1) {
+    grid-row: 1 / span 2;
+    width: 100%;
+  }
+
+  &__grid--item:nth-child(1) img {
+    border-radius: 200px 0px 200px 200px;
+  }
+
+  &__grid--item:nth-child(2) img {
+    border-radius: 10px;
+  }
+
+  &__grid--item:nth-child(3) img {
+    border-radius: 10px 154.5px 10px 10px;
+  }
+
+  &__grid--item:nth-child(4) img {
+    border-radius: 10px 10px 10px 154.5px;
+  }
+
+  &__decor {
     position: relative;
+  }
 
-    &__grid {
-        display: grid;
-        grid-template-columns: auto 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 35px;
-        margin-top: 60px;
-    }
+  &__img {
+    width: 327px;
+    height: 309px;
+    flex-shrink: 0;
+  }
 
-    &__grid--item {
+  &__decor::before {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    background-image: url("../../images/portfolio/decor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 165px;
+    z-index: -1;
+    animation: rotate 10s linear 0s infinite;
+  }
 
-        text-align: center;
-    }
-
-    &__grid--item1 {
-        grid-row: 1 / span 2;
-        width: 100%
-    }
-
-    &__decor {
-        position: relative;
-    }
-
-    &__img {
-        border-radius: 10px 154.5px 10px 10px;
-        width: 327px;
-        height: 309px;
-        flex-shrink: 0;
-    }
-
-    &__decor::before {
-        content: '';
-        position: absolute;
-        width: 205px;
-        height: 205px;
-        background-image: url('../../images/portfolio/decor.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 165px;
-        z-index: -1;
-        animation: rotate 10s linear 0s infinite;
-    }
-
-    &__btn--container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    // &__item--decor{
-    //     position: relative;
-    //     padding: 66px 55px 0 0;
-    // }
-    // &__item--decor::before{
-    //     content: '';
-    //     position: absolute;
-    //     width: 205px;
-    //     height: 205px;
-    //     background-image: url('../../images/portfolio/decor.png');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     top: 0;
-    //     right: 0;
-    //     z-index: -1;
-    //     animation: rotate 10s linear 0s infinite;
-
-    // }
-
-    // &__btn {
-    //     // cursor: pointer;
-    //     // color: white;
-    //     // background-color: #FF39BC;
-    //     // width: 200px;
-    //     // height: 200px;
-    //     // flex-shrink: 0;
-    //     // border: none;
-    //     // border-radius: 50%;
-
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     font-size: 12px;
-    //     cursor: pointer;
-    //     color: white;
-    //     background-color: #FF39BC;
-    //     width: 200px;
-    //     height: 200px;
-    //     flex-shrink: 0;
-    //     border: none;
-    //     border-radius: 50%;
-    //     text-align: center;
-    //     transition: all 0.3 ease-in-out;
-    // }
-    // &__btn:hover {
-    //     filter: drop-shadow(-2px 4px 10px rgba(255, 57, 188, 0.25)) drop-shadow(0px -2px 8px rgba(255, 57, 188, 0.25));
-    // }
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 835px;
-        height: 1096px;
-        background-image: url("../../images/about-me/about-me__bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 350px;
-    	right: 0;
-        z-index: -1;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        width: 835px;
-        height: 1096px;
-        background-image: url("../../images/about-me/about-me__bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-    	right: 0;
-        z-index: -1;
-    }
+  &__btn--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+    grid-row: 2;
+  }
 }

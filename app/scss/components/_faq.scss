@@ -23,6 +23,10 @@
     right: 0;
     z-index: -1;
   }
+
+  &__title {
+    margin-bottom: 50px;
+  }
 }
 
 .faq-container {
@@ -32,13 +36,16 @@
 
 .faq__item {
   background-color: #fff;
-
   border-radius: 10px;
   margin: 20px 0;
   padding: 30px;
   position: relative;
   overflow: hidden;
-  transition: 1s ease;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #ff39bc;
+  }
 }
 
 .faq__item.active {

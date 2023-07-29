@@ -1,4 +1,3 @@
-$(function () {});
 const box = document.querySelector("box");
 const btn = document.querySelector("button");
 
@@ -7,15 +6,9 @@ faqs.forEach((faq) => {
   faq.classList.remove("active");
 });
 
-console.log(faqs);
-
-// Обработчик события клика на кнопку .faq-toggle
-const toggles = document.querySelectorAll(".faq-toggle");
-
-console.log(toggles);
-
-toggles.forEach((toggle) => {
-  toggle.addEventListener("click", () => {
+faqs.forEach((item) => {
+  item.addEventListener("click", () => {
+    const toggle = item.querySelector(".faq-toggle");
     toggle.parentNode.classList.toggle("active");
   });
 });

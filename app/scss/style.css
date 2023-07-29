@@ -378,6 +378,10 @@ html,
 .designs__img {
   border-radius: 50%;
   border: 10px solid #fff;
+  transition: transform 0.5s ease-in-out;
+}
+.designs__img:hover {
+  transform: scale(1.1);
 }
 .designs__item:nth-child(1) img {
   width: 200px;
@@ -556,12 +560,13 @@ html,
   padding: 30px;
   position: relative;
   overflow: hidden;
-  transition: 0.3 ease;
+  transition: 1s ease;
 }
 
 .faq.active {
   background-color: #ff39bc;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  min-height: 170px;
 }
 
 .faq-title {

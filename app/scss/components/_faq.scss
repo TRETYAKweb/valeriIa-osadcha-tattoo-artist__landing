@@ -30,7 +30,7 @@
   margin: 0 auto;
 }
 
-.faq {
+.faq__item {
   background-color: #fff;
 
   border-radius: 10px;
@@ -41,9 +41,8 @@
   transition: 1s ease;
 }
 
-.faq.active {
+.faq__item.active {
   background-color: #ff39bc;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
   min-height: 170px;
 }
 
@@ -51,7 +50,7 @@
   margin: 0 35px 0 0;
 }
 
-.faq.active .faq-title {
+.faq__item.active .faq-title {
   color: #fff;
 }
 
@@ -60,7 +59,7 @@
   margin: 30px 0 0;
 }
 
-.faq.active .faq-text {
+.faq__item.active .faq-text {
   display: block;
   color: #fff;
 }
@@ -90,16 +89,13 @@
   display: none;
 }
 
-.faq.active .faq-toggle .fa-times {
+.faq__item.active .faq-toggle .fa-times {
   color: #fff;
   display: block;
 }
 
-.faq.active .faq-toggle .fa-chevron-down {
+.faq__item.active .faq-toggle .fa-chevron-down {
   display: none;
-}
-
-.faq.active .faq-toggle {
 }
 
 .minus-icon {
@@ -107,11 +103,11 @@
 }
 
 /* Показываем иконку минуса при активности .faq.active */
-.faq.active .minus-icon {
+.faq__item.active .minus-icon {
   display: inline;
 }
 
 /* Скрываем иконку плюса при активности .faq.active */
-.faq.active .plus-icon {
+.faq__item.active .plus-icon {
   display: none;
 }

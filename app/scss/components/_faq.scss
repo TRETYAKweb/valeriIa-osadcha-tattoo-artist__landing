@@ -3,26 +3,31 @@
   &::before {
     content: "";
     position: absolute;
+    max-width: 2000px;
     width: 100%;
     height: 2300px;
     background-image: url("../../images/faq/Ellipse\ 92.png");
     background-repeat: no-repeat;
     background-size: cover;
-    top: -200px;
+    top: -400px;
     z-index: -1;
   }
+
+
   &::after {
     content: "";
     position: absolute;
+    max-width: 1800px;
     width: 100%;
-    height: 2300px;
+    height: 5002px;
     background-image: url("../../images/faq/bg_right.png");
     background-repeat: no-repeat;
     background-size: cover;
-    top: -1200px;
+    top: -2900px;
     right: 0;
     z-index: -1;
-  }
+}
+
 
   &__title {
     margin-bottom: 50px;

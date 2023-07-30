@@ -14,11 +14,9 @@
     border: 10px solid #fff;
     transition: transform 0.5s ease-in-out;
   }
-  &__img:hover{
+  &__img:hover {
     transform: scale(1.1);
   }
-
- 
 
   &__item:nth-child(1) img {
     width: 200px;

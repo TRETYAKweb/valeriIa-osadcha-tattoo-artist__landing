@@ -1,80 +1,133 @@
 html,
 .body {
-	font-family: 'Mulish', sans-serif;
-	height: 100%;
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  height: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
-.container{
+.container {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
-  
- 
 }
 
 .logo {
-    fill: #000000;
-    transition: fill 0.3s ease-in-out;
-    &:hover {
-        fill: #FF39BC;
-    }
+  fill: #000000;
+  transition: fill 0.3s ease-in-out;
+  &:hover {
+    fill: #ff39bc;
+  }
 }
 
-
 .title {
-    padding: 25px 25px 0 0;
-    position: relative;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    display: inline-block;
-    font-size: 50px;
-    color: #000;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        display: block;
-        background-image: url('../images/decor/star.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        top: 0;
-        right: 0;
-    }
+  padding: 25px 25px 0 0;
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 50px;
+  color: #000;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url("../images/decor/star.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    right: 0;
+  }
+}
+
+.button {
+  border: none;
+  padding: 0 30px 0 0;
+  background-color: transparent;
+  color: #ff39bc;
+  position: relative;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.button:hover {
+  color: #1a1a1a;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-image 0.3s ease-in-out;
+}
+
+.button:hover::before {
+  background-image: url("../images/arrow__black.svg");
+}
+
+.button--back {
+  color: #000;
+  padding: 0 0 0 30px;
+  transition: color 0.3s ease-in-out;
+}
+
+.button--back:hover {
+  color: #ff39bc;
+}
+
+.button--back::before {
+  background-image: url("../images/arrow-back.svg");
+  left: 0;
+}
+
+.button--back:hover::before {
+  background-image: url("../images/arrow-back__hover.svg");
 }
 
 .mainBtn {
-    cursor: pointer;
-    color: white;
-    background-color: #FF39BC;
-    width: 200px;
-    height: 200px;
-    border: none;
-    border-radius: 50%;
-    transition: all .3s ease-in-out;
-    &:hover{
-        background-color: transparent;
-        border: 2px solid #FF39BC;
-        color: #000;
-    }
+  cursor: pointer;
+  color: white;
+  background-color: #ff39bc;
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid #ff39bc;
+    color: #000;
+  }
 }
-

@@ -1,0 +1,261 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 880px;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo__mobile {
+        display: block;
+        min-width: 169px;
+        min-height: 56px;
+        z-index: 10;
+
+
+
+    }
+
+    .header__title {
+        font-size: 65px;
+    }
+
+    .header__title::before {
+        left: 50px;
+    }
+
+    .header__text {
+        font-size: 14px;
+        margin-left: 50px;
+    }
+
+    .header_inner img {
+        width: 465px;
+        height: 255px;
+    }
+
+    .mainBtn {
+        width: 170px;
+        height: 170px;
+    }
+
+    .menu__burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu__burger,
+    .menu__social,
+    .menu__btn {
+        flex-shrink: 0;
+    }
+
+    .menu__burger span {
+        height: 2px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .menu__btn {
+        z-index: 10;
+        margin-left: 350px;
+
+    }
+
+    .menu__social {
+        z-index: 10;
+    }
+
+    .menu__mobile {
+        display: none;
+    }
+
+    .menu__mobile.menu--open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F0FDFF;
+        height: 100vh;
+        z-index: 5;
+        text-align: left;
+        padding-top: 300px;
+        padding-left: 25px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background-image: url('../images/decor/star.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 230px;
+            right: 300px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background-image: url('../images/decor/star.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 700px;
+            right: 100px;
+        }
+    }
+
+    .menu__mobile-link {
+        color: #000;
+        font-family: Mulish;
+        font-size: 4vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        display: block;
+        padding: 20px 0;
+    }
+
+    
+    
+    .portfolio__grid--item:nth-child(1) {
+        width: 252px;
+        height: 414px;
+        flex-shrink: 0;
+    }
+
+    .portfolio__grid--item:nth-child(2) {
+        width: 208px;
+        height: 195px;
+        flex-shrink: 0;
+    }
+
+    .portfolio__grid--item:nth-child(3) {
+        width: 207px;
+        height: 195px;
+        flex-shrink: 0;
+    }
+
+    .portfolio__grid--item:nth-child(4) {
+        width: 208px;
+        height: 196px;
+        flex-shrink: 0;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header__title {
+        font-size: 55px;
+    }
+
+    .header__text {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .menu__btn {
+
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 530px;
+    }
+
+    .title {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Чтобы элементы выравнивались по центру по горизонтали */
+        text-align: center;
+    }
+
+    .header__title {
+        font-size: 35px;
+
+    }
+
+    .header__text {
+        font-size: 14px;
+        position: static;
+        display: inline-block;
+    }
+
+    .header_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Чтобы элементы выравнивались по центру по горизонтали */
+        text-align: center;
+    }
+
+    .header_inner img {
+        width: 420px;
+        height: 260px;
+        flex-shrink: 0;
+
+    }
+
+    .mainBtn {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+
+
+    .menu__btn {
+
+        margin-left: 1px;
+    }
+
+    .about__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Чтобы элементы выравнивались по центру по горизонтали */
+        text-align: left;
+    }
+
+    .about__right {
+        margin-top: 30px;
+    }
+}

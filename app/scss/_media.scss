@@ -137,8 +137,13 @@
         padding: 20px 0;
     }
 
-    
-    
+    .portfolio__grid--item img {
+        width: 100%;
+        /* Ширина картинки займет всю доступную ширину ячейки */
+        height: auto;
+        /* Автоматическая высота, чтобы сохранить пропорции */
+    }
+
     .portfolio__grid--item:nth-child(1) {
         width: 252px;
         height: 414px;
@@ -162,6 +167,13 @@
         height: 196px;
         flex-shrink: 0;
     }
+
+    .cities__item {
+
+
+        width: 235px;
+        height: 235px;
+    }
 }
 
 
@@ -184,6 +196,27 @@
 
         margin-left: 250px;
     }
+
+    .portfolio__grid {
+        gap: 15px;
+    }
+
+    .portfolio__decor::before {
+        bottom: 65px;
+        left: 50px;
+    }
+
+    .cities__country {
+        font-size: 17px;
+
+    }
+
+    .cities__item {
+
+
+        width: 185px;
+        height: 185px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -203,20 +236,27 @@
     .header__wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         /* Чтобы элементы выравнивались по центру по горизонтали */
         text-align: center;
     }
 
     .header__title {
         font-size: 35px;
+        text-align: left;
+        max-width: 290px;
+    }
 
+    .header__title::before {
+        left: 300px;
+        top: -100px;
     }
 
     .header__text {
         font-size: 14px;
         position: static;
         display: inline-block;
+        text-align: left;
     }
 
     .header_inner {
@@ -257,5 +297,125 @@
 
     .about__right {
         margin-top: 30px;
+    }
+
+    .portfolio__grid {
+
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    .carusel {
+        display: block;
+        position: relative;
+        max-width: 400px;
+        height: 400px;
+        max-height: 100vh;
+        margin: 20px auto;
+        overflow: hidden;
+        user-select: none;
+    }
+
+    .carusel__item {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: center no-repeat;
+        background-size: contain;
+        transition: left 0.5s, transform 0.5s;
+        will-change: transform;
+        backface-visibility: hidden;
+    }
+
+    .carusel__arrow {
+        display: none;
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+        transform: translateY(-50%);
+        opacity: 0.7;
+        color: #fff;
+        background-color: #999;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 28px;
+        line-height: 39px;
+        font-weight: bold;
+    }
+
+    input:checked+div~div~div~div .carusel__item {
+        background-image: none !important;
+    }
+
+    input:checked+div *,
+    input:checked+div+input+div .carusel__item,
+    input:checked+div+input+div+input+div * {
+        display: block;
+    }
+
+    .carusel__item {
+        flex: 0 0 332px;
+        height: 400px;
+        border-radius: 130px 130px 5px 5px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    input:checked+div .carusel__item {
+        left: -100%;
+        transform: scale(0.4);
+    }
+
+    input:checked+div+input+div .carusel__item {
+        left: 0;
+        transform: scale(1);
+    }
+
+    input:checked+div+input+div+input+div .carusel__item {
+        left: 100%;
+        transform: scale(0.4);
+    }
+
+    input:checked+div .carusel__arrow {
+        left: 0;
+    }
+
+    input:checked+div+input+div+input+div .carusel__arrow {
+        right: 0;
+    }
+
+    input:checked+div .carusel__arrow:before {
+        content: '❰';
+    }
+
+    input:checked+div+input+div+input+div .carusel__arrow:before {
+        content: '❱';
+    }
+
+    .cities__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cities__country {
+        font-size: 22px;
+
+    }
+
+    .cities__item {
+
+
+        width: 256px;
+        height: 256px;
+    }
+    .footer__wrapper{
+        flex-direction: column;
+        align-items: start;
     }
 }

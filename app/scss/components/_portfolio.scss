@@ -45,9 +45,7 @@
   }
 
   &__img {
-    width: 327px;
-    height: 309px;
-    flex-shrink: 0;
+    
   }
 
   &__decor::before {
@@ -70,4 +68,7 @@
     grid-column: 3;
     grid-row: 2;
   }
+}
+.carusel{
+  display: none;
 }

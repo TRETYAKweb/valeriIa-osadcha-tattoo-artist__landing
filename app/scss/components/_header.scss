@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    padding: 100px 0;    
+    padding: 100px 0;
 
     &__wrapper {
         position: relative;
@@ -9,7 +9,7 @@
     &__text {
         width: 232px;
         position: absolute;
-        left: 60%;
+        left: 65%;
         top: 57%;
 
     }
@@ -24,7 +24,7 @@
         align-items: center;
     }
 
-    &__title{
+    &__title {
         position: relative;
         margin-top: 0;
         padding: 70px 0;
@@ -33,11 +33,11 @@
         font-size: 80px;
         font-style: normal;
         font-weight: 600;
-        line-height: 94px; 
+        line-height: 94px;
         text-transform: uppercase;
     }
 
-    &__title::before{
+    &__title::before {
         content: '';
         position: absolute;
         display: block;
@@ -48,8 +48,11 @@
         top: 0;
         left: 160px;
     }
-   
 
+
+}
+.logo__mobile{
+    display: none;
 }
 
 .menu {
@@ -57,6 +60,10 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
+
+    &__mobile {
+        display: none;
+    }
 
     &__list {
         display: flex;
@@ -68,15 +75,15 @@
         padding-right: 19px;
     }
 
-    &__list-link{
+    &__list-link {
         transition: color 0.3s ease-in-out;
-        
+
     }
 
-    &__list-link:hover{
+    &__list-link:hover {
         color: #FF39BC;
     }
-    
+
     &__btn {
         display: flex;
         justify-content: center;
@@ -111,13 +118,16 @@
         cursor: pointer;
     }
 
-    
+
     &__social-item:hover {
         fill: #FF39BC;
     }
 
     &__list-link {
         color: black;
+    }
+    &__burger{
+        display: none;
     }
 }
 
@@ -128,7 +138,7 @@
     height: 2000px;
     background-image: url('../../images/header/header__bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     top: -450px;
     z-index: -1;
 }

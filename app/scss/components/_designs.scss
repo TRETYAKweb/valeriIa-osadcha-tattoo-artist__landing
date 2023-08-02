@@ -4,7 +4,7 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: repeat(12, 80px);
+    // grid-template-columns: repeat(12, 80px);
     grid-template-rows: repeat(8, 100px);
     justify-content: center;
   }
@@ -17,6 +17,7 @@
   &__img:hover {
     transform: scale(1.1);
   }
+  
 
   &__item:nth-child(1) img {
     width: 200px;

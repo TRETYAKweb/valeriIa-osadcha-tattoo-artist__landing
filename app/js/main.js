@@ -24,6 +24,13 @@ faqs.forEach((item) => {
   });
 });
 
+const menuBurger = document.querySelector('.menu__burger');
+const menuMobile = document.querySelector('.menu__mobile');
+
+menuBurger.addEventListener('click', () => {
+  menuMobile.classList.toggle('menu--open');
+})
+
 // Step
 
 const getFormValuesAndInputs = () => {

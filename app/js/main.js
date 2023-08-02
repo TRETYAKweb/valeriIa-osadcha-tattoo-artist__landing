@@ -230,6 +230,7 @@ const showStep2Block = () => {
   bookingFormEl.querySelector(".steps__line").style.backgroundColor = "#ff39bc";
   bookingFormEl.querySelector("#step-two").style.backgroundColor = "#ff39bc";
   bookingFormEl.querySelector("#tattoo-design").style.color = "#1a1a1a";
+  bookingFormEl.querySelectorAll(".steps__item")[1].style.cursor = "none";
 };
 
 bookingFormEl.addEventListener("click", (event) => {
@@ -252,6 +253,8 @@ bookingFormEl.addEventListener("click", (event) => {
       isValidDate
     ) {
       showStep2Block();
+    } else {
+      toastr.error("Please make sure all fields are filled correctly");
     }
   }
   if (event.target.closest("#back-step") || event.target.closest("#step-one")) {
@@ -279,10 +282,16 @@ formEl.addEventListener("submit", (event) => {
   user.placeForTattoo = formData.get("place-for-tattoo");
   user.colors = formData.get("colors");
 
-  if ((isValidSize, isValidIdea, isValidHideTattoo)) {
+  if (isValidSize && isValidIdea && isValidHideTattoo) {
     console.log(user);
     showStep1Block();
     formEl.reset();
+    toastr.success(
+      `We have received your information and will be in touch soon to discuss your tattoo design and placement options.`,
+      "Thank you for submitting the form!"
+    );
+  } else {
+    toastr.error("Please make sure all fields are filled correctly");
   }
 });
 

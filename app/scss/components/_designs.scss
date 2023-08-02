@@ -4,7 +4,7 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: repeat(12, 80px);
+    // grid-template-columns: repeat(12, 80px);
     grid-template-rows: repeat(8, 100px);
     justify-content: center;
   }
@@ -12,11 +12,9 @@
   &__img {
     border-radius: 50%;
     border: 10px solid #fff;
-    transition: transform 0.5s ease-in-out;
+    
   }
-  &__img:hover{
-    transform: scale(1.1);
-  }
+  
 
  
 

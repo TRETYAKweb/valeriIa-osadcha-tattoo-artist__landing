@@ -51,7 +51,7 @@
     transition: background-color 0.3s ease-in-out;
   }
 
-  &__item:nth-child(1) div:hover {
+  &__item:nth-child(1) .steps__wrap:hover {
     background-color: #b61d83;
   }
 
@@ -124,6 +124,14 @@
     outline: transparent;
     border: none;
     border-bottom: 1px solid #797683;
+  }
+
+  &__input--error {
+    border-color: #ea0000;
+  }
+
+  &__error-message {
+    color: #ea0000;
   }
 
   &__input::placeholder {

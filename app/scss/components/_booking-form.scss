@@ -1,0 +1,195 @@
+.booking-form {
+  padding: 100px 0;
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.steps {
+  min-height: 240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:nth-child(1) {
+    position: relative;
+  }
+
+  &__item:nth-child(1) div {
+    cursor: pointer;
+  }
+
+  &__item:nth-child(2) div {
+    cursor: no-drop;
+  }
+
+  &__wrap {
+    width: 30px;
+    font-family: "Montserrat";
+    height: 30px;
+    color: #fff;
+    background-color: #ff39bc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    margin-right: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__item:nth-child(1) .steps__wrap:hover {
+    background-color: #b61d83;
+  }
+
+  &__wrap--gray {
+    background-color: #9c9c9c;
+  }
+
+  &__title {
+    font-size: 12px;
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    opacity: 0.8;
+    max-width: 120px;
+    padding-left: 20px;
+  }
+  &__title--gray {
+    color: #9c9c9c;
+  }
+
+  &__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #1a1a1a;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__line {
+    width: 2px;
+    height: 190px;
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 25px;
+    left: 14px;
+    z-index: -1;
+  }
+}
+
+.form {
+  max-width: 835px;
+  width: 100%;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 2;
+    column-gap: 35px;
+    row-gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #1a1a1a;
+    background-color: transparent;
+    padding: 0 0 15px 0;
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid #797683;
+  }
+
+  &__input--error {
+    border-color: #ea0000;
+  }
+
+  &__error-message {
+    color: #ea0000;
+  }
+
+  &__input::placeholder {
+    color: #797683;
+  }
+
+  &__input:focus {
+    border-color: #ff39bc;
+  }
+
+  &__input--file {
+    display: none;
+  }
+
+  &__file-label {
+    color: #1a1a1a;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    padding-left: 70px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__file-label::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url("../../images/booking-form/plus.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__btn-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin-right: 250px;
+  }
+
+  &__file-label:hover {
+    color: #ff39bc;
+  }
+
+  .file-name {
+    padding-left: 70px;
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    color: #ff39bc;
+  }
+}

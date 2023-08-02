@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -674,6 +674,190 @@
                 </svg>
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-form">
+        <div class="container">
+          <h2 class="booking-form__title title">Booking form</h2>
+          <div class="booking-form__inner">
+            <div class="steps">
+              <div class="steps__item">
+                <div class="steps__wrap" id="step-one">
+                  <span id="step-number-one">1</span>
+                  <img
+                    style="display: none"
+                    id="check-mark-icon"
+                    src="./images/check-mark.svg"
+                    alt="check-mark"
+                    width="11"
+                    height="11"
+                  />
+                </div>
+                <div class="steps__title" id="user-details">User Details</div>
+                <div class="steps__line"></div>
+              </div>
+
+              <div class="steps__item">
+                <div class="steps__wrap steps__wrap--gray" id="step-two">
+                  <span>2</span>
+                </div>
+                <div class="steps__title steps__title--gray" id="tattoo-design">
+                  Tattoo Design and Preferences
+                </div>
+              </div>
+            </div>
+
+            <form class="form" id="form">
+              <div class="form__step" id="step-one-form">
+                <div class="form__inner">
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="username"
+                      placeholder="What is your name? *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="email"
+                      name="email"
+                      placeholder="Your email *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="city"
+                      placeholder="In which city do you want to be tattooed? *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="age"
+                      placeholder="How old are you? *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="tel"
+                      name="phone"
+                      placeholder="Phone number *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="tattoo-date"
+                      placeholder="Choose the date according to the schedule *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+                </div>
+                <button class="button" type="button" id="next-step-btn">
+                  Next step
+                </button>
+              </div>
+              <div style="display: none" class="form__step" id="step-two-form">
+                <div class="form__inner">
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="size"
+                      placeholder="What is the size of the tattoo in cm? *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="idea"
+                      placeholder="Describe your idea *"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="hide-tattoo"
+                      placeholder="What is the size of the scar/tattoo you want to cover?"
+                    />
+                    <span class="form__error-message"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input form__input--file"
+                      type="file"
+                      accept="image/*"
+                      name="references-images"
+                      multiple
+                    />
+                    <span class="form__file-label">
+                      Upload 2-3 referensces images that represents your idea
+                    </span>
+                    <span class="file-name" id="file-referensces-images"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input form__input--file"
+                      type="file"
+                      accept="image/*"
+                      name="place-for-tattoo"
+                    />
+                    <span class="form__file-label">
+                      Add a photo with placement where you want to get tattoo
+                    </span>
+                    <span class="file-name" id="file-name"></span>
+                  </label>
+
+                  <label class="form__item">
+                    <input
+                      class="form__input form__input--file"
+                      type="file"
+                      accept="image/*"
+                      name="colors"
+                    />
+                    <span class="form__file-label"> What about colors?</span>
+                    <span class="file-name" id="file-colors"></span>
+                  </label>
+                </div>
+                <div class="form__btn-container">
+                  <button
+                    class="form__button button button--back"
+                    type="button"
+                    id="back-step"
+                  >
+                    Back step
+                  </button>
+                  <button class="button" type="submit">Confirm</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>

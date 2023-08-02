@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -700,10 +700,10 @@
                     <input
                       class="form__input"
                       type="text"
-                      name="name"
+                      name="username"
                       placeholder="What is your name? *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -712,8 +712,8 @@
                       type="email"
                       name="email"
                       placeholder="Your email *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -722,8 +722,8 @@
                       type="text"
                       name="city"
                       placeholder="In which city do you want to be tattooed? *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -732,8 +732,8 @@
                       type="text"
                       name="age"
                       placeholder="How old are you? *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -742,8 +742,8 @@
                       type="tel"
                       name="phone"
                       placeholder="Phone number *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -752,8 +752,8 @@
                       type="text"
                       name="tattoo-date"
                       placeholder="Choose the date according to the schedule *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
                 </div>
                 <button class="button" type="button" id="next-step-btn">
@@ -768,8 +768,8 @@
                       type="text"
                       name="size"
                       placeholder="What is the size of the tattoo in cm? *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -778,8 +778,8 @@
                       type="text"
                       name="idea"
                       placeholder="Describe your idea *"
-                      required
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -789,6 +789,7 @@
                       name="hide-tattoo"
                       placeholder="What is the size of the scar/tattoo you want to cover?"
                     />
+                    <span class="form__error-message"></span>
                   </label>
 
                   <label class="form__item">
@@ -798,10 +799,9 @@
                       accept="image/*"
                       name="references-images"
                       multiple
-                      required
                     />
                     <span class="form__file-label">
-                      Upload 2-3 referensces images that represents your idea *
+                      Upload 2-3 referensces images that represents your idea
                     </span>
                     <span class="file-name" id="file-referensces-images"></span>
                   </label>
@@ -812,11 +812,9 @@
                       type="file"
                       accept="image/*"
                       name="place-for-tattoo"
-                      placeholder=""
-                      required
                     />
                     <span class="form__file-label">
-                      Add a photo with placement where you want to get tattoo *
+                      Add a photo with placement where you want to get tattoo
                     </span>
                     <span class="file-name" id="file-name"></span>
                   </label>
@@ -827,9 +825,8 @@
                       type="file"
                       accept="image/*"
                       name="colors"
-                      required
                     />
-                    <span class="form__file-label"> What about colors? * </span>
+                    <span class="form__file-label"> What about colors?</span>
                     <span class="file-name" id="file-colors"></span>
                   </label>
                 </div>

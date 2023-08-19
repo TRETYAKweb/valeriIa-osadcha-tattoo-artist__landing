@@ -23,13 +23,20 @@ faqs.forEach((item) => {
     toggle.parentNode.classList.toggle("active");
   });
 });
-
+//burger
 const menuBurger = document.querySelector('.menu__burger');
 const menuMobile = document.querySelector('.menu__mobile');
 
 menuBurger.addEventListener('click', () => {
   menuMobile.classList.toggle('menu--open');
 })
+const closeBtn = document.querySelector('.menu__burgerCloseBtn'); // Добавьте выбор крестика
+
+
+
+closeBtn.addEventListener('click', () => { // Добавьте обработчик события клика для крестика
+  menuMobile.classList.remove('menu--open'); // Закрываем меню при клике на крестик
+});
 
 // Step
 
@@ -334,3 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+
+// крестик бургер 

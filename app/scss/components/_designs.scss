@@ -12,10 +12,7 @@
   &__img {
     border-radius: 50%;
     border: 10px solid #fff;
-    transition: transform 0.5s ease-in-out;
-  }
-  &__img:hover {
-    transform: scale(1.1);
+   
   }
   
 
@@ -82,6 +79,9 @@
   &__instagram {
     display: flex;
     justify-content: flex-end;
+    margin-top: 50px;
+    padding-bottom: 10px;
+
   }
 
   &__link {

@@ -175,11 +175,10 @@
   &__btn-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
-  &__button {
-    margin-right: 250px;
-  }
+  
 
   &__file-label:hover {
     color: #ff39bc;

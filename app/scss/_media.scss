@@ -63,7 +63,12 @@
     .mainBtn {
         width: 170px;
         height: 170px;
+        .btnText {
+            font-size: 14px;
+        }
     }
+
+    
 
     .menu__burger {
         display: flex;
@@ -244,6 +249,11 @@
             transform: rotate(90deg);
         }
     }
+    .form__item {
+        max-width: 350px;
+        width: 100%;
+       
+    }
 }
 
 
@@ -254,12 +264,17 @@
     }
 
     .header__title {
-        font-size: 55px;
+        font-size: 45px;
+        max-width: 595px;
     }
 
     .header__text {
         font-size: 14px;
         margin-left: 15px;
+    }
+    .header_inner img {
+        width: 385px;
+        height: 205px;
     }
 
     .menu__btn {
@@ -275,7 +290,9 @@
         bottom: 65px;
         left: 50px;
     }
-
+.designs__item:nth-child(1) img{
+    height: auto;
+}
     .designs__item:nth-child(1) {
         grid-column: 1/span 3;
 
@@ -311,6 +328,9 @@
 
         grid-row: 4/span 3;
     }
+    .designs__instagram{
+        margin-top: -170px;
+    }
 
     .cities__country {
         font-size: 17px;
@@ -323,16 +343,21 @@
         width: 185px;
         height: 185px;
     }
-    .steps{
-        &__mobile--line{
-            
-        
-        width: 2px;
-        height: 240px;
-        background-color: #c4c4c4;
+    .form__item {
+        max-width: 600px;
+        width: 100%;
+       
     }
-   
-}
+    .steps {
+        &__mobile--line {
+
+
+            width: 2px;
+            height: 240px;
+            background-color: #c4c4c4;
+        }
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -659,15 +684,17 @@
     .faq::after {
         background-position: 64% 48%;
     }
-    .steps{
-        &__mobile--line{
-            
-        
-        width: 2px;
-        height: 115px;
-        background-color: #c4c4c4;
+
+    .steps {
+        &__mobile--line {
+
+
+            width: 2px;
+            height: 115px;
+            background-color: #c4c4c4;
+        }
     }
-}
+
     .footer__wrapper {
         flex-direction: column;
         align-items: start;
@@ -678,7 +705,7 @@
 @media (max-width: 420px) {
     .header__title::before {
         left: 215px;
-        top: -115px;
+        top: -135px;
     }
 
     .designs__item:nth-child(1) {
@@ -759,14 +786,15 @@
         width: 350px;
         // height: 350px;
     }
-    .steps{
-        &__mobile--line{
-            
-        
-        width: 2px;
-        height: 65px;
-        background-color: #c4c4c4;
-    }
 
-}
+    .steps {
+        &__mobile--line {
+
+
+            width: 2px;
+            height: 65px;
+            background-color: #c4c4c4;
+        }
+
+    }
 }
